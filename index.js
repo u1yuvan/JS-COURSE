@@ -11,12 +11,18 @@
 
 // console.log(msg)
 
-let if = 5;
+let fullname = 5;
+let Fullname = 5;
 
-console.log(result
+
+console.log(result)
     
     /*
     rules:
-    1.
+    1.NO Javascript keyword names;
+    2.Should not start with number;
+    3.NO Space and no -
+    4.Its case-Sensitive
+    5.Use meaningfull names.
 
     */
