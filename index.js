@@ -1,25 +1,8 @@
 
-// Object
-let person = {
-    Name : "yuvan",
-    age: 20, 
- gender: "male",
- isAlive: true,
- address: "coimbatore, tamilnadu, india",
- sibling: {
-    brother:"sharun",
-    Sister:"kavya"
- }
-	
-    
-}   //Object
-person.age = 21
+let GUNS =["1 AKM", "2 M762", "3 M416"] //empty arrays
+// - Object
+// -Array
 
-// Dot Notation
+GUNS[4] = "SCARL"
 
-console.log(person.sibling.brother)
-
-// Bracket Notation
-
-
-
+console.log(GUNS[0])
