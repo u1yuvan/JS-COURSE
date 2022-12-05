@@ -1,21 +1,13 @@
-let x = 7;
+
 
 // Equality operaters
-console.log(x === 7); // 7 ===7
-console.log(x !== 7); //7 !==7
 
-// Relation Operators
+//Strict Equality operators
 
-console.log(x < 5); //1 < 5
-console.log(x <= 5);
-console.log(x > 5)
-console.log(x <= 10) 
+// console.log(7 === 7); //number ===number
+// console.log('7'=== 7); //string  === number
 
-true ,false
-
-// string comparison
-console.log('alan' > 'sridhar'); //dictionary
-
-// Comparison of different type
-console.log('1' < 5); // 1 < 5
-console.log(true ==1);
+//Lose Equality Operators
+console.log(7 == 7);// number == number
+console.log('7' == 7); //srting == number
+console.log(true == '1');
