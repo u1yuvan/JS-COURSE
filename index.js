@@ -1,21 +1,10 @@
- 
+let firstName = "Yuvan "; // String
 
-const name = "yuvanraj";
-const dob = "10-10-2002"
+let age = 20; //Integer
 
- 
- let msg = "Hello  my name is "+ name + " & I born on "+ dob +", i'm learning Java Script"
- 
+let isYoung = true //Boolean
 
+let lastName = undefined; //undefined
 
+let trophy = null
 
-
-// Logging
-
-console.log(msg)
-
-
-
-
-    
-   
