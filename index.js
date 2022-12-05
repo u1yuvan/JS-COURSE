@@ -1,8 +1,22 @@
 
-let GUNS =["1 AKM", "2 M762", "3 M416"] //empty arrays
-// - Object
-// -Array
 
-GUNS[4] = "SCARL"
+// //Logging
 
-console.log(GUNS[0])
+// console.log(msg)
+
+
+function greetuser(firstname, lastname) {
+    //srt of statements
+   
+let msg = "Hello "+ firstname +" " + lastname+ "I'm Learning JavaScript!";
+console.log(msg)}
+
+function add(number1,number2){
+console.log(number1/number2)
+console.log(number1+number2)
+console.log(number1*number2)}
+
+add(49,7)
+
+greetuser("yuvan")
+greetuser("stark", "U1 ")
