@@ -1,10 +1,25 @@
-let firstName = "Yuvan "; // String
 
-let age = 20; //Integer
+// Object
+let person = {
+    Name : "yuvan",
+    age: 20, 
+ gender: "male",
+ isAlive: true,
+ address: "coimbatore, tamilnadu, india",
+ sibling: {
+    brother:"sharun",
+    Sister:"kavya"
+ }
+	
+    
+}   //Object
+person.age = 21
 
-let isYoung = true //Boolean
+// Dot Notation
 
-let lastName = undefined; //undefined
+console.log(person.sibling.brother)
 
-let trophy = null
+// Bracket Notation
+
+
 
