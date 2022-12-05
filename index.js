@@ -1,20 +1,21 @@
+let x = 7;
 
-let number1 = 5;
-let number2 = 25;
+// Equality operaters
+console.log(x === 7); // 7 ===7
+console.log(x !== 7); //7 !==7
 
+// Relation Operators
 
+console.log(x < 5); //1 < 5
+console.log(x <= 5);
+console.log(x > 5)
+console.log(x <= 10) 
 
-// // Increment (++)
-// console.log(number1++);
-// console.log(number1);
+true ,false
 
-// Decrement
+// string comparison
+console.log('alan' > 'sridhar'); //dictionary
 
-console.log(number1--);
-console.log(number1);
-
-// console.log(number1 + number2)
-// console.log(number1/number2)
-// console.log(number1+number2)
-// console.log(number1*number2)
-// console.log(number1%number2)
+// Comparison of different type
+console.log('1' < 5); // 1 < 5
+console.log(true ==1);
