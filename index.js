@@ -1,10 +1,20 @@
 
-let x = 5
+let number1 = 5;
+let number2 = 25;
 
-// x++
-x = x + 7
 
-// x*=5
 
-console.log(x)
+// // Increment (++)
+// console.log(number1++);
+// console.log(number1);
 
+// Decrement
+
+console.log(number1--);
+console.log(number1);
+
+// console.log(number1 + number2)
+// console.log(number1/number2)
+// console.log(number1+number2)
+// console.log(number1*number2)
+// console.log(number1%number2)
