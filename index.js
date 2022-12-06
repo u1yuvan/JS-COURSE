@@ -1,17 +1,17 @@
-// logical operartors
+//Falsy (false)
+// undefined
+// null
+// 0
+// false
+// '' -> ""
+// NaN
 
-// highincome, CIBILscore -> Loan eligible, Inelegible
-
-
-let highincome = true
-let CIBILscore = false
-
-let eligiblePerson =  highincome ||  CIBILscore
-
-let applicationstatus = !eligiblePerson
+// truthy -> Anything that is not falsy is -> Truthy
 
 
+let usercolor = undefined;
+let defaultcolor = "blue";
 
-console.log( "LoanStatus: " + eligiblePerson);
+let currentColor = usercolor || defaultcolor
 
-console.log( "applicationstatus: " + applicationstatus);
+console.log("selected Color: " + currentColor);
