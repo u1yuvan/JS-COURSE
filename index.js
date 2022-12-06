@@ -1,13 +1,21 @@
 
+//If person's age is more than 18,
+//They are 'Adult' category,otherwise,
+//They are a 'child' category
 
-// Equality operaters
+let age = 17;
 
-//Strict Equality operators
+let type = age > 18 ? "Adult Ticket" : "Child Ticket"
 
-// console.log(7 === 7); //number ===number
-// console.log('7'=== 7); //string  === number
 
-//Lose Equality Operators
-console.log(7 == 7);// number == number
-console.log('7' == 7); //srting == number
-console.log(true == '1');
+
+console.log(type);
+
+// if(condition){
+//     //condition runs
+//     let type = 'Adult Ticket'
+// }
+// else{
+//     //else runs
+//     let type = 'Child Ticket'
+// }
