@@ -1,19 +1,28 @@
-let i = 0; // inline variable
+//For-in
 
-while(i <=20){
+// const person ={
+//     name :'Yuvan',
+//     age:20,
+//     sex:'Male'
+// };
 
-if(i % 2 !== 0){
-    console.log("Even Number While #" +i);
-  } 
-  i++; //condition
-  console.log(i);
+
+// for(let key in person){
+//     //code
+//     console.log(key +":", person[key]);
+// }
+
+let colors = ['red','blue','black'];
+
+//FOR IN
+for(let key in colors){
+    console.log(colors[key]);
 }
 
-do{
-    console.log(i);
-    if(i % 2 !== 0){
-        console.log("Even Number Do While #" +i);
-      } 
-      i++; //condition
+//FOR OF
+for(let Color of colors){
+    console.log("Color: " + Color);
+}
 
-} while(i <=20) 
+
+
