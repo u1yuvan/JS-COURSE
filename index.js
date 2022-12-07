@@ -1,35 +1,88 @@
-//Conditional statements
-// let isRaining = false;
-// let isCloudy = true;
+//switch case
 
-// if (isRaining  || isCloudy) {
-//     console.log("Don't forgot to take umbrella!");
+// let grade = "B";
 
-// }
-// else {
-//     console.log("Sky is normal! Enjoy your day");
-// }
+// //S
+// //A
+// //B
+// //E
+// //U
 
-// if hour is between to 12am to 1pm -> Good Morning
-//Else if hour is between 1pm to 6pm -> Good Afternoon
-//Else hour is between 6pm to 12am -> good night
 
-// let hrs = new Date();
-// let hour = hrs.getHours();                                   OR
 
-let hour= new Date().getHours();
-// console.log(hour);
-// console.log(hour.getHours());
+// switch(grade){
+//     case "S":
+//         console.log("Super  Grade");
+//         break;
+//         case "A":
+//             case "B":
+//             console.log("Exelent Grade");
+//             break;
 
-if (hour >= 0 && hour <= 13)
-   {
-    console.log("Good Morning");
-   }
-   else if( hour >= 13 && hour <= 18){
-    console.log("Good Afternoon");
-   }
+//             case "E":
+//                 console.log("Just Pass!");
+//                 break;
+
+//             case "U":
+//                 console.log("Fail");   
+//                 break;
+                
+//                 default:
+//                     console.log("Unknown Grade");
+
+//         }
+
+
+
+
+// let marks = 99;
+// switch(true){
+//     case marks > 99:
+//         console.log("centum");
+//         break;
+//     case marks > 90:
+//         console.log("Super Grade");
+//         break;
+// case marks > 40:
+//     console.log("Pass");
+//     break;
     
-    else
-    {
-        console.log("Good Evening");
-    }
+//         case marks < 40:
+//             console.log("Failed!");
+//             break;
+            
+//             default: 
+//             console.log("Unknown Grade");
+// }
+
+//Example: Mobile buying suggestion
+//if given saving amount is > 10k buy Realme mobile
+//Else If given amount is > 20k buy iqoo mobile// Else If given amount is 40k buy iphone 11
+//Else If given amount is  > 500 && < 1k buy nokia 1100
+//Else print "You can't affort mobile phone now!"
+
+let budjet = 300;
+switch(true) {
+    
+    case budjet >=40000:
+        console.log("Iphone 11");
+        break;
+    case budjet >=20000:
+        console.log("Iqoo Z6 pro");
+        break;
+case budjet >=10000:
+    console.log("Realme");
+    break;
+    case budjet >=5000:
+        console.log("Redmi");
+        break;
+    case budjet >=1000:
+        console.log("Nokia 1100");
+        break
+    
+    case budjet <=1000 && budjet >= 500:
+        console.log("Nokia 1100");
+        break;
+        
+        default:
+            console.log("You can't affort mobile phone now!");}
