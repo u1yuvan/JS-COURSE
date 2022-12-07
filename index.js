@@ -1,12 +1,9 @@
-// for(initialExpression; Condition; Step){
-//     console.log("Number #1");
-// }
+let i = 20; // inline variable
 
-for(let i = 10;i >=1;i--){
+while(i >=1){
 
 if(i % 2 == 0){
     console.log("Even Number #" +i);
-}
-
-  
+  } 
+  i--; //condition
 }
