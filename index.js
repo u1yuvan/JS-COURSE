@@ -1,28 +1,19 @@
-//For-in
+let person = {
+    name:"yuvan",
+    age:20,
+    interest : [' Web Development and learn something new  '],
+    isAlive:true,
+    address:{
+        city:"Coimbatore",
+    state:"Tamil nadu"
+},
 
-// const person ={
-//     name :'Yuvan',
-//     age:20,
-//     sex:'Male'
-// };
 
-
-// for(let key in person){
-//     //code
-//     console.log(key +":", person[key]);
-// }
-
-let colors = ['red','blue','black'];
-
-//FOR IN
-for(let key in colors){
-    console.log(colors[key]);
+Greeting:function() {
+    
+    let msg = `My name is ${this.name}, I love ${this.interest}`;
+    console.log(msg);
 }
+};
 
-//FOR OF
-for(let Color of colors){
-    console.log("Color: " + Color);
-}
-
-
-
+person.Greeting()
