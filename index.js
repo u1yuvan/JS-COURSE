@@ -1,18 +1,24 @@
 //Factory functions
-function createperson(name){
+function createPerson(name){//camelcase: myFristName
 
 
 return  {
     name:name,  
 Greeting:function() {
-    
-    let msg = `My name is ${this.name}`;
-    console.log(msg);
+    console.log(m`My name is ${this.name}`);
         }
     };
 }
 
-let yuvan = createperson("yuvan");
-let sridhar = createperson("sridhar");
-yuvan.Greeting();
-sridhar.Greeting();
+//constructor functions
+
+function Person(name){// Pascal -> MyFristName
+    this.name = name;
+    this.Greeting = function() {
+        console.log(`My name is ${this.name}`);
+    }
+    }
+    let person = new Person("yuvan");
+
+    person.Greeting();
+
