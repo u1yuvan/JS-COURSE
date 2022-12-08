@@ -1,19 +1,18 @@
-let person = {
-    name:"yuvan",
-    age:20,
-    interest : [' Web Development and learn something new  '],
-    isAlive:true,
-    address:{
-        city:"Coimbatore",
-    state:"Tamil nadu"
-},
+//Factory functions
+function createperson(name){
 
 
+return  {
+    name:name,  
 Greeting:function() {
     
-    let msg = `My name is ${this.name}, I love ${this.interest}`;
+    let msg = `My name is ${this.name}`;
     console.log(msg);
+        }
+    };
 }
-};
 
-person.Greeting()
+let yuvan = createperson("yuvan");
+let sridhar = createperson("sridhar");
+yuvan.Greeting();
+sridhar.Greeting();
