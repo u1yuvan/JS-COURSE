@@ -1,13 +1,11 @@
-//Dynamic Object
-const person = {
-    name: "yuvan"
-}
+// let name = "yuvan"; // new string ("yuvan")
+// let age = 20; //Numeric Literals -> new number()
+// let isAlive = true; //BooleanLiterals -> new boolean()
 
+// console.log(name, age, isAlive);
 
-person.age = 20;
-person.greeting = function(){}
+let name =String ("yuvan");
+let age = Number(20);
+let isAlive = Boolean(true);
 
-delete person.greeting;
-delete person.age;
-
-console.log(person);
+console.log(name, age, isAlive);
