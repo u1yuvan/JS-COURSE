@@ -1,24 +1,13 @@
-//Factory functions
-function createPerson(name){//camelcase: myFristName
-
-
-return  {
-    name:name,  
-Greeting:function() {
-    console.log(m`My name is ${this.name}`);
-        }
-    };
+//Dynamic Object
+const person = {
+    name: "yuvan"
 }
 
-//constructor functions
 
-function Person(name){// Pascal -> MyFristName
-    this.name = name;
-    this.Greeting = function() {
-        console.log(`My name is ${this.name}`);
-    }
-    }
-    let person = new Person("yuvan");
+person.age = 20;
+person.greeting = function(){}
 
-    person.Greeting();
+delete person.greeting;
+delete person.age;
 
+console.log(person);
