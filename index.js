@@ -1,6 +1,19 @@
-//JavaScript Inbuild Objects
+// String Primitives
+const name = "Vaishu";
 
-let marks = [45,15,23,87,45,48,87,69,95,99];
+const message = `Thank you ${name} for watching \n \"U1 Gaming\" Channel`;
 
-let result = Math.max(...marks);
-console.log("Maximum Marks: " + result);
+
+const message2 =`Hello ${name},
+  Thank you for watching "U1 Gaming" Channel
+
+  With Love,
+  yuvan`;
+
+console.log(message);
+console.log(message2);
+
+//OBJECT :{}
+//Boolean : true, false
+//String:'',""
+//Template:``
