@@ -1,11 +1,26 @@
-// let name = "yuvan"; // new string ("yuvan")
-// let age = 20; //Numeric Literals -> new number()
-// let isAlive = true; //BooleanLiterals -> new boolean()
+//Enumerating Properties of an Object
+const user ={
+    name:'yuvan',
+    age :20,
+    getFullName(){
+        console.log(`My name is ${this.name}`);
+    }
+}
 
-// console.log(name, age, isAlive);
+//CLONING OBJECTS
 
-let name =String ("yuvan");
-let age = Number(20);
-let isAlive = Boolean(true);
 
-console.log(name, age, isAlive);
+// let another = Object.assign({},user);
+// age:20;
+
+// SPREAD OPERATOR
+let another = {...user}
+
+
+console.log(another);
+
+
+
+// for(let key  in user){
+//     another[key] = user[key];
+// }
