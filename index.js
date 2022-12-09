@@ -1,26 +1,6 @@
-//Enumerating Properties of an Object
-const user ={
-    name:'yuvan',
-    age :20,
-    getFullName(){
-        console.log(`My name is ${this.name}`);
-    }
-}
+//JavaScript Inbuild Objects
 
-//CLONING OBJECTS
+let marks = [45,15,23,87,45,48,87,69,95,99];
 
-
-// let another = Object.assign({},user);
-// age:20;
-
-// SPREAD OPERATOR
-let another = {...user}
-
-
-console.log(another);
-
-
-
-// for(let key  in user){
-//     another[key] = user[key];
-// }
+let result = Math.max(...marks);
+console.log("Maximum Marks: " + result);
