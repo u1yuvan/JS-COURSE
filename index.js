@@ -1,19 +1,6 @@
 //Adding elements to JavaScript Array
 //PRIMITIVE TYPES
 
-// const orders = [
-//     {id: 1, item:"Smartphone", Quantity:7},
-//     {id: 2, item:"tab", Quantity:7},
-//     {id: 3, item:"laptops", Quantity:3},]
-
-
-//   let result =  orders.find(function(orders){
-//         return orders.item === "tab"
-//     })
-//     console.log(result);
-
-
-// WORKOUT
 
 const accessories =[
   {id:1, item:"headphones", quantity:3},
@@ -27,8 +14,11 @@ const accessories =[
   {id:9, item:"blow dryier", quantity:1},
 ]
 
-let result = accessories.find(function(accessories){
- return accessories.item ==="laptop"}
- )
+// let result = accessories.find(function(accessories){
+//  return accessories.item ==="laptop"}
+//  )
+
+
+let result = accessories.find( (accessories)=> accessories.item ==="laptop")// Arrow Function
 
  console.log(result);
