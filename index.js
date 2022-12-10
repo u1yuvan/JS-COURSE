@@ -1,19 +1,10 @@
-// String Primitives
-const name = "Vaishu";
+//Adding elements to JavaScript Array
+const bikes = ["GT-650","Duke-250","Vitpilen-250"]
 
-const message = `Thank you ${name} for watching \n \"U1 Gaming\" Channel`;
-
-
-const message2 =`Hello ${name},
-  Thank you for watching "U1 Gaming" Channel
-
-  With Love,
-  yuvan`;
-
-console.log(message);
-console.log(message2);
-
-//OBJECT :{}
-//Boolean : true, false
-//String:'',""
-//Template:``
+//PUSH
+bikes.push("Z900")
+//UNSHIFT
+bikes.unshift("RR-310")
+//SPLICE
+bikes.splice(3,0,"Himalayan", "Swartpillen-250")
+console.log(bikes);
