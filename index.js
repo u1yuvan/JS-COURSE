@@ -1,16 +1,18 @@
-//Removing Elements in Array
+//Emptying an JavaScript Array
 
-const number = [ 1,2,3,4];
+let number =[1,2,3,4];
 
-//END
-//.PUSH => POP
-// number.pop()
+//Sollution 1
+// number =[];
 
-//START
-//UNSHIFT => SHIFT 
-// number.shift()
-//MIDDLE
-//SPLICE => SPLICE
-number.splice(0,0)
+//Sollution 2
+// number.length = 0;
+
+// console.log(number.length);
+//Sollution 3
+// number.splice(0,number.length)
+
+//Sollution 4
+while(number.length) number.pop();
 
 console.log(number);
