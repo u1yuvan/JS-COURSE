@@ -1,12 +1,16 @@
+const dailyRoutine =["Wakeup","Eat","Sleep"];
 
-// Combining Arrays
-const shopping_cart = ['Beans','Masala','Maggi'];
-const additional_cart =['Matchbox', 'salt'];
+// //For-of
+// for(let routine of dailyRoutine){
+//     //Logics
+//     console.log(routine);
+// }
 
-// Combine
-// let recipe = shopping_cart.concat(additional_cart);
+// //For-in
+// for(let routine in dailyRoutine){
+//     console.log(routine,dailyRoutine[routine]);
+// }
 
-//Spread Operator
-let recipe = [...shopping_cart,73,{name:"yuvan"},...additional_cart];
+//For-Each
+dailyRoutine.forEach(routine=>console.log(routine));//FAT ARROW
 
-console.log(recipe);
