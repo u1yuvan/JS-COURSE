@@ -1,18 +1,12 @@
-//Emptying an JavaScript Array
 
-let number =[1,2,3,4];
+// Combining Arrays
+const shopping_cart = ['Beans','Masala','Maggi'];
+const additional_cart =['Matchbox', 'salt'];
 
-//Sollution 1
-// number =[];
+// Combine
+// let recipe = shopping_cart.concat(additional_cart);
 
-//Sollution 2
-// number.length = 0;
+//Spread Operator
+let recipe = [...shopping_cart,73,{name:"yuvan"},...additional_cart];
 
-// console.log(number.length);
-//Sollution 3
-// number.splice(0,number.length)
-
-//Sollution 4
-while(number.length) number.pop();
-
-console.log(number);
+console.log(recipe);
