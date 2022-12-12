@@ -1,39 +1,18 @@
-//Sorting a JavaScript Array
+// Testing is it odd or even
 
-// const students = [ 7,5,9,2,4,8];
+const numbers = [1,2,3,4,5,6];
 
-// students.reverse()    //for reverse this array 
+//every()
+// let isEven = numbers.every(function(value){
+//     return value % 2 === 0;
+// })
 
-// students.sort();                         //Acending Order
-
-// students.sort(function(a,b){
-//     return b- a;                      //Decending Order 
-// });
-
-
-const students = [
-    { id:7, name:"senthil" },
-    {id:5, name:"Guna"},
-    {id:9, name:"Velu"},
-    {id:2, name:"thambi"},
-    {id:4,name:"Anbu"},
-    {id:8, name:"Rajan"}
-];
-
-students.sort ( (a,b) => {
-    nameA = a.name.toLowerCase();
-    nameB = b.name.toLowerCase();
-
-    //a < b => -1
-if(nameA < nameB) return -1;
-
-//a > b => +1
-
-if(nameA > nameB) return +1;
-
-//a === b => 0
-return 0})
+// console.log("isEven: ", isEven);
 
 
+//some()
+let isodd = numbers.some(function(value){
+    return value % 4 === 1;
+})
 
-console.log(students);
+console.log("isodd: ", isodd);
