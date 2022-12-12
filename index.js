@@ -1,18 +1,21 @@
-// Testing is it odd or even
+//Testing Elements in JavaScript Array - Reference types
+const items = [
+    {id:1, name:"Smartphones", isDeliverable:true},
 
-const numbers = [1,2,3,4,5,6];
-
-//every()
-// let isEven = numbers.every(function(value){
-//     return value % 2 === 0;
-// })
-
-// console.log("isEven: ", isEven);
+    {id:2, name:"Accessories", isDeliverable:false,
+},
+    {id:3, name:"T.V", isDeliverable:true},
+];
 
 
-//some()
-let isodd = numbers.some(function(value){
-    return value % 4 === 1;
-})
+let AllDeliverables = items.every(function(value){
+ return value.isDeliverable == true;
+});
 
-console.log("isodd: ", isodd);
+
+let notDeliverables = items.some(function(value){
+    return value.isDeliverable == true;
+   });
+
+console.log("AllDeliverables", AllDeliverables);
+console.log("notDeliverables", notDeliverables);
