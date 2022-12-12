@@ -1,35 +1,39 @@
-//Joining and Splitting JavaScript ARRAYS
+//Sorting a JavaScript Array
+
+// const students = [ 7,5,9,2,4,8];
+
+// students.reverse()    //for reverse this array 
+
+// students.sort();                         //Acending Order
+
+// students.sort(function(a,b){
+//     return b- a;                      //Decending Order 
+// });
+
+
+const students = [
+    { id:7, name:"senthil" },
+    {id:5, name:"Guna"},
+    {id:9, name:"Velu"},
+    {id:2, name:"thambi"},
+    {id:4,name:"Anbu"},
+    {id:8, name:"Rajan"}
+];
+
+students.sort ( (a,b) => {
+    nameA = a.name.toLowerCase();
+    nameB = b.name.toLowerCase();
+
+    //a < b => -1
+if(nameA < nameB) return -1;
+
+//a > b => +1
+
+if(nameA > nameB) return +1;
+
+//a === b => 0
+return 0})
 
 
 
-// const dailyRoutine =["Wakeup","Eat","Sleep"];
-
-// let dailyroutines =dailyRoutine.join(", ")        //JOINING
-
-// console.log(dailyroutines);
-
-
-// let fullname = "Yuvan raj";
-// let username = fullname.split(" ");    //SPLITTING
-
-// let firstname = username[0];
-// let lastname =username[1];
-
-// console.log(`My First name is ${firstname} and last name is ${lastname}`);
-
-
-
-// let postTitle = "This is my Post".toUpperCase();         //case sensitive
-// let postslug = postTitle.split(" ");
-// let finalslug = postslug.join('_')
-
-// console.log(finalslug);
-
-
-                                                  //workout
-let mythings = "airpods airdopes blastbox realmebuds2 ".toUpperCase();
-postslug = mythings.split(" ");
-finalslug = postslug.join("---");
-
-
-console.log(finalslug);
+console.log(students);
