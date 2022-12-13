@@ -1,20 +1,16 @@
-//JavaScript Hoisting
-
-// Function Declaration 
-
-addnoDeclaration();
-
-function addnoDeclaration(){
-    console.log("Adding no from func. Declaration: ",);
-}
+// Adding Two numbers
 
 
-//Function Expression
+//immediately Invoked Function Expression (IIFE)
+(() => {
+    let no1 = 22356;
+let no2 = 67690;
 
-let addnoExpression = function(){
-    console.log("Adding no from func.Expression: ",);
+    let result = no1 + no2;
+    (function displaynumber(){
+        console.log("result: ",result);
+    })();
+//   displaynumber();
+})();
 
-};
-
-
-addnoExpression();
+// sumnumbers();
