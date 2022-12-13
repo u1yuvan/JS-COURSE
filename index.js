@@ -1,25 +1,26 @@
-//JavaScript: Difference Between Sort() ,  find() , filter(), map() and  reduce().... 
-const numbers = [45,4,24,54,48,82];
+// add two no
+let no1 = 35546;
+let no2 = 45265;
 
-//Sort
-// let result  = numbers.sort();
-//Find 
-// let result=  numbers.find((val) => {
-//   return val > 50;
-// });
+//function declaration
+// function addno(){
+//     let result = no1 + no2;
+//     console.log(result);
+//     }
 
-//Filter
-// let result=  numbers.filter((val) => {
-//     return val > 50;
-//   });
-//Map
-// let result=  numbers.map((val) => {
-//     return "#" + val;
-//   })
+// addno();
+//function expression  (Named function expression)
+// const addno = function addno()  {
+//     let result = no1 + no2;
+//     console.log(result);
+//     };
 
-//Reduce
-let result=  numbers.reduce((pre,val) => {
-    return pre * val;
-  })
-console.log(result);
+    //Anonymous Function Expression
+    // const addno =() => {
+    //     let result = no1 + no2;
+    //     console.log(result);
+    //     };
+    
 
+        const addno = new Function("console.log(no1 + no2)");
+    addno();
