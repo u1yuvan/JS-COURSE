@@ -1,13 +1,25 @@
-//JavaScript Arrays - Reduce Method
+//JavaScript: Difference Between Sort() ,  find() , filter(), map() and  reduce().... 
+const numbers = [45,4,24,54,48,82];
 
-const shoppingCart =[
-    {id:1, item:"Milk", cost:35},
-    {id:2, item:"Bread", cost:50},
-    {id:3, item:"jam", cost:25},
-];
+//Sort
+// let result  = numbers.sort();
+//Find 
+// let result=  numbers.find((val) => {
+//   return val > 50;
+// });
 
-const addcost = (previousval,currentval) => previousval + currentval.cost; 
+//Filter
+// let result=  numbers.filter((val) => {
+//     return val > 50;
+//   });
+//Map
+// let result=  numbers.map((val) => {
+//     return "#" + val;
+//   })
 
-    let totalCost = shoppingCart.reduce(addcost,0);  //initial value = 0
+//Reduce
+let result=  numbers.reduce((pre,val) => {
+    return pre * val;
+  })
+console.log(result);
 
-console.log("Your total amount is: ",totalCost);
