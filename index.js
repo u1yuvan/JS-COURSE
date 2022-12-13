@@ -1,26 +1,20 @@
-// add two no
-let no1 = 35546;
-let no2 = 45265;
+//JavaScript Hoisting
 
-//function declaration
-// function addno(){
-//     let result = no1 + no2;
-//     console.log(result);
-//     }
+// Function Declaration 
 
-// addno();
-//function expression  (Named function expression)
-// const addno = function addno()  {
-//     let result = no1 + no2;
-//     console.log(result);
-//     };
+addnoDeclaration();
 
-    //Anonymous Function Expression
-    // const addno =() => {
-    //     let result = no1 + no2;
-    //     console.log(result);
-    //     };
-    
+function addnoDeclaration(){
+    console.log("Adding no from func. Declaration: ",);
+}
 
-        const addno = new Function("console.log(no1 + no2)");
-    addno();
+
+//Function Expression
+
+let addnoExpression = function(){
+    console.log("Adding no from func.Expression: ",);
+
+};
+
+
+addnoExpression();
