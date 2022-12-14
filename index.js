@@ -1,10 +1,17 @@
-//Function Default Parameters
+let student = {
+  firstname: "yuvan",
+  lastname:"raj",
+  get fullname(){
+    return`${student.firstname} ${student.lastname}`;
+  },
+  set fullname(value){
+   let values =  value.split(" ");
+   this.firstname = values[0];
+   this.lastname = values[1] ?? "";
+  },
+};
+student.fullname ="Arthur"
+// getters => used to get data
+//setters => used to set data
 
-function calculateTax(cost,tax = 18,title){
-
-  TaxAmount = cost * (tax/100);  //45* (18/100)
-
-  console.log(`Total Cost is: ₹${cost} \n\nGST Of Tax(${tax}%) is: ${TaxAmount} \n\nTotal Amount is: ₹${cost + TaxAmount}`);
-  }
-
-  calculateTax(3500,30,"Mobile")
+console.log(student.fullname);
