@@ -1,10 +1,10 @@
-//Rest Operator
-function sumExpense(loan,...expenses){
+//Function Default Parameters
 
- let total = expenses.reduce((a, b) => a + b);
- return total- loan;
-}
+function calculateTax(cost,tax = 18,title){
 
-let result = sumExpense(100, 65,250,105,78,15,69,78 );
+  TaxAmount = cost * (tax/100);  //45* (18/100)
 
-console.log("Your Total Expense is: ₹",result);
+  console.log(`Total Cost is: ₹${cost} \n\nGST Of Tax(${tax}%) is: ${TaxAmount} \n\nTotal Amount is: ₹${cost + TaxAmount}`);
+  }
+
+  calculateTax(3500,30,"Mobile")
